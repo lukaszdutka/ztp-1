@@ -163,4 +163,8 @@ public class View {
     public int getDecision() {
         return Integer.parseInt(s.nextLine());
     }
+
+    public void closeScanner() {
+        s.close();
+    }
 }

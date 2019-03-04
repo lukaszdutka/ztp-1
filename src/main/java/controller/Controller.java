@@ -82,6 +82,7 @@ public class Controller {
                     break;
                 case 9:
                     saveData();
+                    view.closeScanner();
                     System.exit(0);
                 default:
                     System.out.println("Bad input, try again.");
