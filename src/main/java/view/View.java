@@ -161,7 +161,11 @@ public class View {
     }
 
     public int getDecision() {
-        return Integer.parseInt(s.nextLine());
+        try {
+            return Integer.parseInt(s.nextLine());
+        } catch (NumberFormatException e){
+            return -1;
+        }
     }
 
     public void closeScanner() {
