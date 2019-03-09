@@ -26,10 +26,6 @@ public class Controller {
         setIds();
     }
 
-    private void setIds() {
-//        Shipment.startingIdCounter(10);
-//        ShipmentPosition.startingIdCounter(10);
-    }
 
     private void decide() {
         while (true) {
@@ -104,7 +100,6 @@ public class Controller {
         return view.getDecision();
     }
 
-
     private void saveData() {
         try {
             ObjectOutputStream ss = new ObjectOutputStream(new FileOutputStream(filePath + fileName));
@@ -122,5 +117,11 @@ public class Controller {
         } catch (IOException | ClassNotFoundException e) {
             shipments = new HashMap<>();
         }
+    }
+
+
+    private void setIds() {
+        Shipment.startingIdCounter(10);
+        ShipmentPosition.startingIdCounter(10);
     }
 }
