@@ -1,8 +1,8 @@
-package view;
+package zad0.view;
 
 import lombok.NoArgsConstructor;
-import model.Shipment;
-import model.ShipmentPosition;
+import zad0.model.Shipment;
+import zad0.model.ShipmentPosition;
 
 import java.time.LocalDate;
 import java.util.Map;

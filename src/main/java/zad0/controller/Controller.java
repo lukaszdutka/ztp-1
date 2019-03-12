@@ -1,8 +1,8 @@
-package controller;
+package zad0.controller;
 
-import model.Shipment;
-import model.ShipmentPosition;
-import view.View;
+import zad0.model.Shipment;
+import zad0.model.ShipmentPosition;
+import zad0.view.View;
 
 import java.io.*;
 import java.util.HashMap;

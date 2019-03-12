@@ -1,4 +1,6 @@
-import controller.Controller;
+package zad0;
+
+import zad0.controller.Controller;
 
 public class Application {
 

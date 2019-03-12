@@ -1,4 +1,4 @@
-package model;
+package zad0.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
