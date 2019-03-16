@@ -54,8 +54,11 @@ public class Application {
         Ptak<DuzeSkrzydelka> labedz = new Ptak<>(new DuzeSkrzydelka());
 //        Ptak<Object> dziwnyPtak = new Ptak<MaleSkrzydelka>(new Object());
 
+
         kurczak.trzepotajSkrzydlami();
         labedz.trzepotajSkrzydlami();
+
+        System.out.println();
 
         //koercja
         labedz.zlozJajka(5);

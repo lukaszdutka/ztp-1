@@ -16,8 +16,5 @@ public class Ptak<T extends Skrzydla> {
         System.out.println("To int, wiec ma zlozyc malo jajek: " + number);
     }
 
-    public void zlozJajka(Integer number){
-        System.out.println("To Integer, wiec ma zlozyc dwa razy wiecej jajek: " + number*2);
-    }
 
 }
