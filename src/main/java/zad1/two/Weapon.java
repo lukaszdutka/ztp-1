@@ -8,7 +8,7 @@ public class Weapon {
         this.weight = weight;
     }
 
-    public String pokazDane() {
+    public String pokazDaneWeapon() {
         return "Weapon{" +
                 "weight=" + weight +
                 "kg}";

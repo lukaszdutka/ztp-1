@@ -8,15 +8,13 @@ public class Application {
         Weapon bladed = new Bladed(1.5, true);
         Weapon sword = new Sword(2.7, true, 1.7);
 
-        Container<Weapon> weapons = new Container<>();
+        Container<Weapon> container = new Container<>();
 
-        weapons.add(weapon);
-        weapons.add(bladed);
-        weapons.add(sword);
+        container.add(weapon);
+        container.add(bladed);
+        container.add(sword);
 
-        for(int i = 0 ; i < weapons.size(); i++){
-            System.out.println(weapons.get(i).pokazDane());
-        }
+        Wyswietlacz.wyswietlWszystkie(container);
 
 
     }

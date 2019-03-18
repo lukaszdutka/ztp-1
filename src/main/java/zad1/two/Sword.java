@@ -9,7 +9,7 @@ public class Sword extends Bladed {
         this.length = length;
     }
 
-    public String pokazDane() {
+    public String pokazDaneSword() {
         return "Sword{" +
                 "length=" + length +
                 "m, bothSidesSharp=" + bothSidesSharp +

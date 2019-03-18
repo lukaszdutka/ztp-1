@@ -9,7 +9,7 @@ public class Bladed extends Weapon {
         this.bothSidesSharp = bothSidesSharp;
     }
 
-    public String pokazDane() {
+    public String pokazDaneBladed() {
         return "Bladed{" +
                 "bothSidesSharp=" + bothSidesSharp +
                 ", weight=" + weight +
