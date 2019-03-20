@@ -17,16 +17,27 @@ class Wyswietlacz {
     static void wyswietlWszystkie(Container<Weapon> container) {
         for (int i = 0; i < container.size(); i++) {
             print(container.get(i));
+            System.out.println();
         }
     }
 
     private static void print(Weapon w) {
-        if (w instanceof Sword) {
-            wyswietlSword((Sword) w);
-        } else if (w instanceof Bladed) {
-            wyswietlBladed((Bladed) w);
-        } else {
+        try{
             wyswietlWeapon(w);
+        } catch (Exception e){
+            System.out.println("To nie jest Weapon: " + w);
+        }
+
+        try{
+            wyswietlBladed((Bladed) w);
+        } catch (Exception e){
+            System.out.println("To nie jest Bladed: " + w);
+        }
+
+        try{
+            wyswietlSword((Sword) w);
+        } catch (Exception e){
+            System.out.println("To nie jest Sword: " + w);
         }
     }
 }
