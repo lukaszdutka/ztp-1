@@ -1,15 +1,15 @@
 package zad1.two;
 
-public class Sword extends Bladed {
+class Sword extends Bladed {
 
     private double length;
 
-    public Sword(double weight, boolean bothSidesSharp, double length) {
+    Sword(double weight, boolean bothSidesSharp, double length) {
         super(weight, bothSidesSharp);
         this.length = length;
     }
 
-    public String pokazDaneSword() {
+    String pokazDaneSword() {
         return "Sword{" +
                 "length=" + length +
                 "m, bothSidesSharp=" + bothSidesSharp +

@@ -1,14 +1,14 @@
 package zad1.two;
 
-public class Weapon {
+class Weapon {
 
     double weight;
 
-    public Weapon(double weight) {
+    Weapon(double weight) {
         this.weight = weight;
     }
 
-    public String pokazDaneWeapon() {
+    String pokazDaneWeapon() {
         return "Weapon{" +
                 "weight=" + weight +
                 "kg}";
