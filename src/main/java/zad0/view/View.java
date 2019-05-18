@@ -1,6 +1,5 @@
 package zad0.view;
 
-import lombok.NoArgsConstructor;
 import zad0.model.Shipment;
 import zad0.model.ShipmentPosition;
 
@@ -8,7 +7,6 @@ import java.time.LocalDate;
 import java.util.Map;
 import java.util.Scanner;
 
-@NoArgsConstructor
 public class View {
 
     private static final String SHIPMENT_FORMAT = "|%5s|%30s|%30s|%20s|\n";
@@ -16,6 +14,9 @@ public class View {
     private static final String LINE = "|----------------------------------------------------------------------------------------|\n";
     private static final String POSITION_LINE = "|   |--------------------------------------------------------------------------------|   |\n";
     private static final String SPACE = "|%88s|\n";
+
+    public View() {
+    }
 
     private final Scanner s = new Scanner(System.in);
 

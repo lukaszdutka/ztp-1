@@ -1,12 +1,8 @@
 package zad0.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
 
 import java.io.Serializable;
 
-@Data
-@AllArgsConstructor
 public class ShipmentPosition implements Serializable {
 
     static int idCounter = 0;
@@ -26,5 +22,43 @@ public class ShipmentPosition implements Serializable {
 
     public static void startingIdCounter(int id){
         idCounter = id;
+    }
+
+    public static int getIdCounter() {
+        return idCounter;
+    }
+
+    public static void setIdCounter(int idCounter) {
+        ShipmentPosition.idCounter = idCounter;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getProduct() {
+        return product;
+    }
+
+    public void setProduct(String product) {
+        this.product = product;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public ShipmentPosition(String id, String product, int quantity) {
+        this.id = id;
+        this.product = product;
+        this.quantity = quantity;
     }
 }

@@ -5,7 +5,7 @@ import java.util.Random;
 public class CountryCreator {
 
     private static final Random R = new Random();
-    private static String[] countryPrefix = {"Wielka ", "Matka "};
+    private static String[] countryPrefix = {"Wielka ", "Matka ", ""};
     private static String[] countryFirstSyllable = {"Pol", "Niem", "Nor"};
     private static String[] countrySecondSyllable = {"", "", "we", "ta"};
     private static String[] countryThirdSyllable = {"ska", "gia", "nia"};
